@@ -17,9 +17,11 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 1. Seguí la Ruta en `docs/roadmap.html`.
 2. Entrá a `docs/module-1.html` para entender la base del curso.
-3. Abrí el notebook y ejecutá las celdas a tu ritmo.
+3. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
 4. Cerrá cada módulo con `docs/feedback.html`, escribí las 3 respuestas de reflexión y compartilas por el canal de la clase o con el mentor hasta que esté listo el formulario.
 5. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+
+> En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
 ## Estructura del repositorio
 
@@ -32,13 +34,14 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/feedback.html` | Página de feedback breve para estudiantes |
 | `docs/styles.css` | Estilos compartidos del sitio |
 | `docs/_config.yml` | Metadata liviana para GitHub Pages |
-| `NLP_LLMs_babysteps.ipynb` | Notebook práctico principal |
+| `NLP_LLMs_babysteps.ipynb` | Notebook práctico principal — [Abrir en Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) / [Ver en GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) |
 
 ## Notebook + roadmap
 
 - El notebook se usa para practicar.
 - La ruta se usa para decidir qué mirar primero.
 - El módulo 1 se usa para entender la idea base antes de tocar el notebook.
+- Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
 - Si recién empezás, seguí este orden: Ruta → Módulo 1 → Notebook → Feedback → Seguimiento.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
 
