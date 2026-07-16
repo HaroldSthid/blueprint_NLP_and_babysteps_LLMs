@@ -8,17 +8,18 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 - una página inicial clara para orientarse,
 - una ruta de aprendizaje por etapas,
+- un Módulo 1 guiado para abrir antes del notebook,
 - un flujo simple para medir avance y feedback,
 - una página de feedback para el cierre de cada clase o módulo,
 - y el notebook como laboratorio práctico.
 
 ## Cómo usar el sitio de GitHub Pages
 
-1. Abrí la página principal del sitio publicado desde `docs/index.html`.
-2. Leé el roadmap para entender el orden sugerido.
-3. Entrá al notebook y ejecutá las celdas a tu ritmo.
+1. Seguí la Ruta en `docs/roadmap.html`.
+2. Entrá a `docs/module-1.html` para entender la base del curso.
+3. Abrí el notebook y ejecutá las celdas a tu ritmo.
 4. Cerrá cada módulo con `docs/feedback.html`, escribí las 3 respuestas de reflexión y compartilas por el canal de la clase o con el mentor hasta que esté listo el formulario.
-5. Usá la sección de tracking para entender cómo se relaciona el progreso con el feedback.
+5. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
 
 ## Estructura del repositorio
 
@@ -26,6 +27,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 |------|-----------|
 | `docs/index.html` | Landing page de la academia |
 | `docs/roadmap.html` | Ruta de aprendizaje para principiantes |
+| `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
 | `docs/feedback.html` | Página de feedback breve para estudiantes |
 | `docs/styles.css` | Estilos compartidos del sitio |
@@ -35,8 +37,9 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 ## Notebook + roadmap
 
 - El notebook se usa para practicar.
-- La roadmap se usa para decidir qué mirar primero.
-- Si recién empezás, seguí el orden sugerido de la página de roadmap antes de saltar entre temas.
+- La ruta se usa para decidir qué mirar primero.
+- El módulo 1 se usa para entender la idea base antes de tocar el notebook.
+- Si recién empezás, seguí este orden: Ruta → Módulo 1 → Notebook → Feedback → Seguimiento.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
 
 ## Tracking y feedback

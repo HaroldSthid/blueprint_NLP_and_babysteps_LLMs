@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Módulo 1 | NLP & Baby Steps LLMs</title>
+    <meta
+      name="description"
+      content="Guía simple del Módulo 1 para entender cómo una máquina lee texto antes de abrir el notebook."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="module-1.html">Módulo 1</a>
+          <a href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb">Notebook</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="tracking.html">Seguimiento</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Módulo 1</span>
+          <h1>Cómo una máquina lee texto.</h1>
+          <p class="lead">
+            En este primer módulo vas a seguir el recorrido de un notebook que enseña a un modelo a
+            decidir si una reseña de película es positiva o negativa.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb">Abrir notebook</a>
+            <a class="button secondary" href="feedback.html">Ir a Feedback</a>
+          </div>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="objective">
+          <article class="card wide">
+            <h2 id="objective" class="section-title">Objetivo del módulo</h2>
+            <p class="meta">
+              Entender cómo una máquina transforma texto en señales útiles, qué significa preparar
+              ese material y por qué el camino incluye errores, reinicios y ajustes reales.
+            </p>
+          </article>
+          <article class="card wide soft">
+            <h2 class="section-title">Antes de abrir el notebook</h2>
+            <ul class="list">
+              <li>No necesitás saber programación avanzada.</li>
+              <li>Conviene leer las instrucciones con calma antes de ejecutar celdas.</li>
+              <li>Si algo no se entiende, anotá la duda en vez de saltarlo.</li>
+              <li>Recordá que este módulo es para mirar el proceso, no para memorizar todo.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="vocabulary">
+          <article class="card full">
+            <h2 id="vocabulary" class="section-title">Vocabulario clave</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Término</th>
+                  <th>En simple</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Texto</td>
+                  <td>Lo que escribimos o leemos: una frase, un comentario, una reseña.</td>
+                </tr>
+                <tr>
+                  <td>Token</td>
+                  <td>Una pieza pequeña del texto, como una palabra o parte de una palabra.</td>
+                </tr>
+                <tr>
+                  <td>Número</td>
+                  <td>La forma en que la computadora representa el texto para poder calcular con él.</td>
+                </tr>
+                <tr>
+                  <td>Modelo</td>
+                  <td>El sistema que aprende patrones a partir de muchos ejemplos.</td>
+                </tr>
+                <tr>
+                  <td>Predicción</td>
+                  <td>La respuesta que el modelo intenta dar a partir de lo que vio.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="steps">
+          <article class="card full">
+            <h2 id="steps" class="section-title">Camino del notebook</h2>
+            <p class="meta">
+              Pensalo como preparar a un estudiante para un examen importante: primero armamos el
+              entorno, después practicamos, corregimos errores y recién al final pedimos una
+              respuesta al modelo.
+            </p>
+            <div class="timeline">
+              <div class="step">
+                <div class="step-number">0</div>
+                <div>
+                  <h3>Preparar la mochila</h3>
+                  <p class="meta">Instalamos bibliotecas, resolvemos conflictos de versiones y, si hace falta, reiniciamos para limpiar el entorno.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                  <h3>Traer las reseñas</h3>
+                  <p class="meta">Intentamos cargar el dataset con tensorflow_datasets y, si falla, usamos la descarga y extracción directa como respaldo.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                  <h3>Limpiar las reseñas</h3>
+                  <p class="meta">Quitamos HTML y puntuación, pasamos a minúsculas, lematizamos y manejamos diccionarios faltantes o errores en reseñas puntuales.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                  <h3>Preparar las entradas</h3>
+                  <p class="meta">Convertimos cada reseña en una forma útil para el modelo y aceptamos que algunos casos necesiten correcciones extra.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                  <h3>Mirar y entender</h3>
+                  <p class="meta">Revisamos el balance de clases y generamos word clouds para ver qué palabras dominan el conjunto.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">5</div>
+                <div>
+                  <h3>Entrenar el modelo</h3>
+                  <p class="meta">El modelo aprende patrones de sentimiento y luego lo evaluamos, con resultados cercanos al 88% de accuracy.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">6</div>
+                <div>
+                  <h3>Guardar lo aprendido</h3>
+                  <p class="meta">Guardamos el modelo y el vectorizador para no repetir el trabajo desde cero.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">7</div>
+                <div>
+                  <h3>Probar con reseñas nuevas</h3>
+                  <p class="meta">Clasificamos textos reales y resolvemos el detalle de convertir la salida flotante a entero para leer la confianza correctamente.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">8</div>
+                <div>
+                  <h3>Entender por qué decidió eso</h3>
+                  <p class="meta">Miramos qué palabras empujan hacia lo positivo o lo negativo para explicar la predicción.</p>
+                </div>
+              </div>
+            </div>
+            <p class="meta">
+              Acá, los errores y los reinicios no son fracaso: son parte del aprendizaje. Cada
+              ajuste deja el camino más robusto y más fácil de repetir.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="checkpoints">
+          <article class="card wide soft">
+            <h2 id="checkpoints" class="section-title">Checkpoints rápidos</h2>
+            <ul class="list">
+              <li>¿Podés decir con tus palabras qué hace una máquina con un texto?</li>
+              <li>¿Reconocés la diferencia entre texto, token y número?</li>
+              <li>¿Sabés por qué el texto tiene que prepararse antes de usarlo?</li>
+              <li>¿Podés repetir el notebook sin perderte en cada celda?</li>
+            </ul>
+          </article>
+          <article class="card wide">
+            <h2 class="section-title">Si te trabaste</h2>
+            <p class="meta">
+              Volvé a leer la celda anterior, buscá la palabra que no entendiste y escribila en una
+              frase simple. Si sigue la duda, dejala anotada para el cierre del módulo.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="reflection">
+          <article class="card full">
+            <h2 id="reflection" class="section-title">Cierre y reflexión</h2>
+            <p class="meta">
+              Antes de seguir con la ruta, completá tu reflexión en la página de feedback. Pensá qué
+              entendiste, qué te trabó y qué ejemplo te ayudaría a fijar la idea.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="feedback.html">Ir a Feedback</a>
+              <a class="button secondary" href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb">Volver al notebook</a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="roadmap.html">Ver la ruta</a></span>
+        <span><a href="tracking.html">Ver seguimiento</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
