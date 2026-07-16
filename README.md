@@ -1,84 +1,53 @@
-# Análisis de Sentimiento de Películas de IMDb
+# NLP & Baby Steps LLMs
 
-Este proyecto analiza reseñas de películas de IMDb para predecir si son positivas o negativas usando técnicas de machine learning y procesamiento de lenguaje natural.
+Plataforma guía para estudiantes no técnicos que quieren aprender NLP y LLMs paso a paso, sin perderse en teoría pesada ni en notebooks aislados.
 
-## 🌟 Características
+## Visión del proyecto
 
-- Limpieza y preprocesamiento de texto
-- Visualización de palabras más comunes
-- Modelo de machine learning para análisis de sentimiento
-- Interfaz para probar con nuevas reseñas
-- Análisis de palabras más importantes
+Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea es convertirlo en una academia liviana y pública con:
 
-## 🚀 Cómo usar
+- una página inicial clara para orientarse,
+- una ruta de aprendizaje por etapas,
+- un flujo simple para medir avance y feedback,
+- y el notebook como laboratorio práctico.
 
-### En Google Colab
+## Cómo usar el sitio de GitHub Pages
 
-1. Abre [Google Colab](https://colab.research.google.com/)
-2. Sube el archivo `IMDb_Sentiment_Analysis.ipynb`
-3. Ejecuta las celdas en orden (haciendo clic en el botón ▶️ de cada celda)
-4. Sigue las instrucciones en pantalla
+1. Abrí la página principal del sitio publicado desde `docs/index.html`.
+2. Leé el roadmap para entender el orden sugerido.
+3. Entrá al notebook y ejecutá las celdas a tu ritmo.
+4. Usá la sección de tracking para entender cómo se registra el progreso.
 
-### Resultados esperados
+## Estructura del repositorio
 
-Al completar el análisis, obtendrás:
-- Modelo entrenado para predecir sentimiento
-- Visualizaciones de palabras importantes
-- Entendimiento de qué palabras se asocian con reseñas positivas/negativas
+| Ruta | Propósito |
+|------|-----------|
+| `docs/index.html` | Landing page de la academia |
+| `docs/roadmap.html` | Ruta de aprendizaje para principiantes |
+| `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
+| `docs/styles.css` | Estilos compartidos del sitio |
+| `docs/_config.yml` | Metadata liviana para GitHub Pages |
+| `NLP_LLMs_babysteps.ipynb` | Notebook práctico principal |
 
-## 📊 Dataset
+## Notebook + roadmap
 
-El proyecto utiliza el dataset [IMDb Reviews](https://www.tensorflow.org/datasets/catalog/imdb_reviews) de TensorFlow Datasets, que contiene 50,000 reseñas de películas etiquetadas como positivas o negativas.
+- El notebook se usa para practicar.
+- La roadmap se usa para decidir qué mirar primero.
+- Si recién empezás, seguí el orden sugerido de la página de roadmap antes de saltar entre temas.
+- Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
 
-## 🛠️ Tecnologías utilizadas
+## Tracking y feedback
 
-- Python
-- TensorFlow
-- TensorFlow Datasets
-- NLTK
-- Scikit-learn
-- Pandas, NumPy
-- Matplotlib, Seaborn
+El objetivo es que el progreso de estudiantes pueda registrarse con una solución simple como AppSheet + Google Sheets, sin exponer secretos ni enlaces privados en el repo.
 
-## 📚 Recursos de aprendizaje
+- Si el repositorio ya tuviera analítica o tracking configurado, conviene preservarlo.
+- En este estado no se detectó configuración de analítica en el repo.
+- Si hace falta, la medición puede agregarse más adelante desde la Pages theme o desde la propia capa estática.
 
-### Para principiantes
-- [Introducción a Python](https://www.learnpython.org/)
-- [Curso de machine learning para principiantes](https://www.coursera.org/learn/machine-learning)
+## Dataset original
 
-### Para intermedios
-- [Procesamiento de lenguaje natural con NLTK](https://www.nltk.org/book/)
-- [Documentación de TensorFlow](https://www.tensorflow.org/tutorials)
+El notebook actual sigue apuntando al caso IMDb de sentiment analysis como base práctica para aprender.
 
-### Videos tutoriales
-- [Análisis de sentimiento explicado](https://www.youtube.com/watch?v=8S3qHHUKqYk)
-- [Machine learning para humanos](https://www.youtube.com/watch?v=JMUxmLyrhSk)
+## Contribuir
 
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el proyecto:
-
-1. Haz fork del proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👨‍💻 Autor
-
-Creado por [Tu Nombre] - ¡Si te gusta este proyecto, dale una estrella ⭐!
-
-## 🆘 Soporte
-
-Si tienes problemas o preguntas:
-1. Revisa los issues existentes
-2. Crea un nuevo issue con detalles de tu problema
-3. Únete a nuestra [comunidad de Discord]([link]) para ayuda en tiempo real
-
----
-
-¿Te sirvió este proyecto? ¡Dale una ⭐ al repositorio para apoyar el trabajo!
+Si querés seguir ampliando la academia, mantené los cambios pequeños y fáciles de revisar.
