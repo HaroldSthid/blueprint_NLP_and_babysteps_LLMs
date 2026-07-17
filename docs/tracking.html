@@ -92,6 +92,26 @@
             </ul>
           </article>
 
+          <article class="card full soft">
+            <h2 class="section-title">Modelo mínimo de datos</h2>
+            <p class="meta">
+              Para empezar con Google Sheets o AppSheet, alcanza con una tabla simple. Podés usar
+              <a href="tracking-template.csv">este CSV de ejemplo</a> como punto de partida.
+            </p>
+            <ul class="list">
+              <li><strong>timestamp:</strong> cuándo se registró el feedback.</li>
+              <li><strong>student_alias:</strong> nombre corto o alias del estudiante.</li>
+              <li><strong>module:</strong> módulo o clase asociada.</li>
+              <li><strong>confidence_level:</strong> bajo, medio o alto.</li>
+              <li><strong>understood:</strong> qué entendió.</li>
+              <li><strong>blocked_on:</strong> dónde se trabó.</li>
+              <li><strong>needs_next:</strong> qué necesita para avanzar.</li>
+              <li><strong>evidence_link:</strong> evidencia opcional, si existe.</li>
+              <li><strong>status:</strong> started, practiced, feedback_sent, needs_support o completed.</li>
+              <li><strong>mentor_notes:</strong> observaciones internas del mentor.</li>
+            </ul>
+          </article>
+
           <article class="card wide">
             <h2 class="section-title">Qué no conviene guardar</h2>
             <ul class="list">
@@ -107,6 +127,7 @@
               Si el repositorio ya tiene una configuración de analítica o medición, debe mantenerse.
               En este slice no se detectó una configuración activa, así que el tracking sigue siendo
               conceptual y se apoya en la página de Feedback para recolectar señales de aprendizaje.
+              Cuando exista el formulario real, el link se puede agregar sin publicar datos privados.
             </p>
           </article>
         </section>

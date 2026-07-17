@@ -1,0 +1,3 @@
+timestamp,student_alias,module,confidence_level,understood,blocked_on,needs_next,evidence_link,status,mentor_notes
+2026-07-17,estudiante_demo,Modulo 1,medio,"Entendi que el modelo aprende patrones de palabras","Me trabe en la limpieza del texto","Necesito un ejemplo mas visual",,feedback_sent,"Revisar limpieza y lematizacion en clase"
+2026-07-17,grupo_demo,Modulo 1,bajo,"Entendi la idea general de sentimiento","No entendi bien el vectorizador","Necesito repaso paso a paso",,needs_support,"Preparar explicacion corta sobre vectorizacion"

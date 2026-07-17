@@ -31,6 +31,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/roadmap.html` | Ruta de aprendizaje para principiantes |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
+| `docs/tracking-template.csv` | Plantilla inicial para Google Sheets/AppSheet sin datos reales |
 | `docs/feedback.html` | Página de feedback breve para estudiantes |
 | `docs/styles.css` | Estilos compartidos del sitio |
 | `docs/_config.yml` | Metadata liviana para GitHub Pages |
@@ -49,6 +50,8 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 El objetivo es que el progreso de estudiantes pueda registrarse con una solución simple como AppSheet + Google Sheets, sin exponer secretos ni enlaces privados en el repo. La página `docs/feedback.html` funciona como el punto de cierre de cada clase o módulo y, mientras el formulario no esté disponible, las respuestas se comparten por el canal de la clase o directamente con el mentor.
 
+- `docs/tracking-template.csv` sirve como plantilla inicial para crear una Google Sheet.
+- Los links reales al Form/AppSheet deben agregarse recién cuando existan y sean seguros para publicar.
 - Si el repositorio ya tuviera analítica o tracking configurado, conviene preservarlo.
 - En este estado no se detectó configuración de analítica en el repo.
 - Si hace falta, la medición puede agregarse más adelante desde la Pages theme o desde la propia capa estática.
