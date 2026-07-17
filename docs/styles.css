@@ -170,6 +170,39 @@ h1 {
   background: var(--surface-alt);
 }
 
+.embed-card {
+  display: grid;
+  gap: 18px;
+}
+
+.embed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.embed-link {
+  white-space: nowrap;
+}
+
+.form-frame-wrap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+
+.form-frame {
+  display: block;
+  width: 100%;
+  min-height: 980px;
+  border: 0;
+  background: #fff;
+}
+
 .meta {
   color: var(--muted);
   font-size: 0.95rem;
@@ -367,5 +400,18 @@ details.class-note > .note-body ul {
   .step-number {
     width: 48px;
     height: 48px;
+  }
+
+  .embed-header {
+    flex-direction: column;
+  }
+
+  .embed-link {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .form-frame {
+    min-height: 860px;
   }
 }

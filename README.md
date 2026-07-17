@@ -12,7 +12,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
 - una guía para mentores con la configuración de Google Form + Google Sheets + AppSheet,
-- una página de feedback para el cierre de cada clase o módulo,
+- una página de feedback para el cierre de cada clase o módulo con el Form público embebido,
 - y el notebook como laboratorio práctico.
 
 ## Cómo usar el sitio de GitHub Pages
@@ -21,7 +21,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 2. Entrá a `docs/module-1.html` para entender la base del curso.
 3. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
 4. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
-5. Cerrá cada módulo con `docs/feedback.html`, escribí las 3 respuestas de reflexión y compartilas por el canal de la clase o con el mentor hasta que esté listo el formulario.
+5. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
 6. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
 7. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
 
@@ -37,7 +37,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
 | `docs/tracking-template.csv` | Plantilla inicial para Google Sheets/AppSheet sin datos reales |
-| `docs/feedback.html` | Página de feedback breve para estudiantes |
+| `docs/feedback.html` | Página de feedback breve para estudiantes con el Form público embebido |
 | `docs/appsheet-setup.html` | Guía para mentores sobre Form + Sheets + AppSheet |
 | `docs/styles.css` | Estilos compartidos del sitio |
 | `docs/_config.yml` | Metadata liviana para GitHub Pages |
@@ -54,11 +54,11 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 ## Tracking y feedback
 
-El objetivo es que el progreso de estudiantes pueda registrarse con una solución simple como AppSheet + Google Sheets, sin exponer secretos ni enlaces privados en el repo. La página `docs/feedback.html` funciona como el punto de cierre de cada clase o módulo y, mientras el formulario no esté disponible, las respuestas se comparten por el canal de la clase o directamente con el mentor.
+El objetivo es que el progreso de estudiantes pueda registrarse con una solución simple como AppSheet + Google Sheets, sin exponer secretos ni enlaces privados en el repo. La página `docs/feedback.html` funciona como el punto de cierre de cada clase o módulo, embebe el Form público y mantiene el tracking privado en AppSheet fuera de GitHub.
 
 - `docs/tracking-template.csv` sirve como plantilla inicial para crear una Google Sheet.
 - `docs/appsheet-setup.html` documenta el flujo de mentoría y las vistas sugeridas en AppSheet.
-- Los links reales al Form/AppSheet deben agregarse recién cuando existan y sean seguros para publicar.
+- Los links privados de AppSheet o de la Sheet no deben publicarse en el repo; el Form público se muestra solo en `docs/feedback.html`.
 - Si el repositorio ya tuviera analítica o tracking configurado, conviene preservarlo.
 - En este estado no se detectó configuración de analítica en el repo.
 - Si hace falta, la medición puede agregarse más adelante desde la Pages theme o desde la propia capa estática.
