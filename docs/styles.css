@@ -184,6 +184,79 @@ h1 {
   margin-top: 8px;
 }
 
+.note-stack {
+  display: grid;
+  gap: 14px;
+}
+
+details.class-note {
+  --note-accent: var(--brand);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--note-accent);
+  border-radius: 18px;
+}
+
+details.class-note > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  cursor: pointer;
+  font-weight: 800;
+  list-style: none;
+}
+
+details.class-note > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.class-note > summary::after {
+  content: "+";
+  color: var(--note-accent);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+details.class-note[open] > summary::after {
+  content: "–";
+}
+
+details.class-note > .note-body {
+  padding: 0 18px 16px;
+  color: var(--muted);
+}
+
+details.class-note > .note-body p {
+  margin: 0;
+}
+
+details.class-note > .note-body ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.skip-note {
+  --note-accent: #7b61ff;
+  background: #faf8ff;
+}
+
+.mentor-note {
+  --note-accent: #1b8f6a;
+  background: #f4fbf7;
+}
+
+.class-note .note-kicker {
+  display: block;
+  color: var(--note-accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
 .section {
   margin-top: 22px;
 }
@@ -281,6 +354,10 @@ h1 {
 @media (max-width: 600px) {
   .shell {
     padding: 16px;
+  }
+
+  details.class-note > summary {
+    align-items: flex-start;
   }
 
   .step {
