@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guía de AppSheet | NLP & Baby Steps LLMs</title>
+    <meta
+      name="description"
+      content="Guía para mentores y administradores sobre cómo conectar Google Forms, Google Sheets y AppSheet para seguimiento de progreso estudiantil."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="module-1.html">Módulo 1</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="tracking.html">Seguimiento</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Solo para mentoría y administración</span>
+          <h1>Convertí el feedback en un sistema liviano de apoyo al aprendizaje.</h1>
+          <p class="lead">
+            Esta guía explica cómo pasar de un formulario simple a una hoja ordenada y, después,
+            a una vista de AppSheet para ver progreso, detectar apoyo necesario y decidir la
+            próxima acción de clase.
+          </p>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="goal-flow">
+          <article class="card wide">
+            <h2 id="goal-flow" class="section-title">Objetivo y flujo</h2>
+            <p class="meta">
+              La idea no es crear más burocracia. La idea es transformar el feedback en una ayuda
+              concreta para acompañar a cada estudiante sin perder claridad ni privacidad.
+            </p>
+            <div class="timeline">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                  <h3>Estudiante</h3>
+                  <p class="meta">Completa un formulario breve después de la clase.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                  <h3>Google Form</h3>
+                  <p class="meta">Recoge las respuestas mínimas para registrar avance y dudas.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                  <h3>Google Sheet</h3>
+                  <p class="meta">Guarda cada respuesta en una tabla común basada en la plantilla.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                  <h3>AppSheet</h3>
+                  <p class="meta">Muestra vistas para mentoría, seguimiento y resumen por módulo.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">5</div>
+                <div>
+                  <h3>Próxima clase</h3>
+                  <p class="meta">El mentor elige la acción siguiente: repaso, ejemplo, práctica o apoyo.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="setup-checklist">
+          <article class="card full soft">
+            <h2 id="setup-checklist" class="section-title">Checklist de configuración</h2>
+            <ol class="list">
+              <li>Crear una Google Sheet desde <a href="tracking-template.csv">tracking-template.csv</a>.</li>
+              <li>Crear un Google Form con las preguntas mínimas.</li>
+              <li>Conectar las respuestas del Form con la Sheet.</li>
+              <li>Crear una app de AppSheet desde esa Sheet.</li>
+              <li>Configurar las vistas: Student Progress, Needs Support, Module Summary y Mentor Notes.</li>
+              <li>Publicar o compartir solo con las personas previstas.</li>
+            </ol>
+          </article>
+
+          <article class="card wide">
+            <h2 class="section-title">Campos de la hoja</h2>
+            <p class="meta">
+              Mantener los nombres exactos ayuda a que el Form, la Sheet y AppSheet sigan hablando
+              el mismo idioma.
+            </p>
+            <ul class="list">
+              <li><strong>timestamp:</strong> fecha y hora del envío.</li>
+              <li><strong>student_alias:</strong> alias o nombre corto del estudiante.</li>
+              <li><strong>module:</strong> módulo o clase.</li>
+              <li><strong>confidence_level:</strong> bajo, medio o alto.</li>
+              <li><strong>understood:</strong> qué entendió.</li>
+              <li><strong>blocked_on:</strong> dónde se trabó.</li>
+              <li><strong>needs_next:</strong> qué necesita para seguir.</li>
+              <li><strong>evidence_link:</strong> enlace opcional a evidencia.</li>
+              <li><strong>status:</strong> started, practiced, feedback_sent, needs_support o completed.</li>
+              <li><strong>mentor_notes:</strong> notas internas del mentor.</li>
+            </ul>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Preguntas mínimas del Google Form</h2>
+            <p class="meta">
+              El formulario debe pedir solo lo necesario. No hace falta duplicar campos que ya
+              puede completar la hoja o el mentor.
+            </p>
+            <ul class="list">
+              <li><strong>Nombre o alias</strong> — para reconocer el avance sin exponer datos sensibles.</li>
+              <li><strong>Módulo o clase</strong> — por ejemplo, Módulo 1.</li>
+              <li><strong>Nivel de confianza</strong> — bajo, medio o alto.</li>
+              <li><strong>Qué entendí</strong> — una idea concreta que ya podés explicar.</li>
+              <li><strong>Dónde me trabé</strong> — el paso exacto que necesitó más guía.</li>
+              <li><strong>Qué necesito después</strong> — práctica, repaso, ejemplo, comparación o pausa.</li>
+              <li><strong>Evidencia opcional</strong> — link a una nota, captura o entrega si aplica.</li>
+            </ul>
+            <p class="meta">
+              No pongas en el Form los campos <strong>timestamp</strong>, <strong>status</strong> o
+              <strong>mentor_notes</strong>: esos los maneja la hoja o el mentor.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="appsheet-views">
+          <article class="card full">
+            <h2 id="appsheet-views" class="section-title">Vistas sugeridas en AppSheet</h2>
+            <div class="timeline">
+              <div class="step">
+                <div class="step-number">A</div>
+                <div>
+                  <h3>Student Progress</h3>
+                  <p class="meta">Vista principal por estudiante. Ordená por timestamp y status.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">B</div>
+                <div>
+                  <h3>Needs Support</h3>
+                  <p class="meta">Filtrá por status = needs_support o confidence_level = bajo.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">C</div>
+                <div>
+                  <h3>Module Summary</h3>
+                  <p class="meta">Agrupá por module para ver patrones de avance y dudas repetidas.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">D</div>
+                <div>
+                  <h3>Mentor Notes</h3>
+                  <p class="meta">Mostrá mentor_notes para registrar acciones y recordatorios internos.</p>
+                </div>
+              </div>
+            </div>
+            <ul class="list">
+              <li><strong>Filtros útiles:</strong> módulo, nivel de confianza, estado y alias.</li>
+              <li><strong>Status sugeridos:</strong> started, practiced, feedback_sent, needs_support y completed.</li>
+              <li><strong>Acción práctica:</strong> marcar qué se repite y qué conviene explicar otra vez en la próxima clase.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="privacy-ready">
+          <article class="card wide soft">
+            <h2 id="privacy-ready" class="section-title">Privacidad y seguridad</h2>
+            <ul class="list">
+              <li>No guardes secretos, contraseñas ni tokens.</li>
+              <li>Evita datos sensibles que no ayuden al aprendizaje.</li>
+              <li>Usá alias si eso reduce exposición innecesaria.</li>
+              <li>No publiques enlaces privados en el repositorio.</li>
+              <li>Revisá permisos antes de compartir la app con estudiantes o mentores.</li>
+            </ul>
+          </article>
+
+          <article class="card wide">
+            <h2 class="section-title">Definition of ready</h2>
+            <ul class="list">
+              <li>La Sheet quedó creada desde la plantilla y sin datos privados innecesarios.</li>
+              <li>El Form usa exactamente las preguntas mínimas definidas arriba.</li>
+              <li>Las respuestas del Form llegan a la Sheet correcta.</li>
+              <li>La app de AppSheet muestra las cuatro vistas previstas.</li>
+              <li>Los filtros y estados funcionan sin romper el flujo.</li>
+              <li>La app solo está compartida con las personas previstas.</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="tracking.html">Volver al seguimiento</a></span>
+        <span><a href="feedback.html">Ver feedback</a></span>
+        <span>
+          <a href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/README.md">
+            Leer README
+          </a>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
