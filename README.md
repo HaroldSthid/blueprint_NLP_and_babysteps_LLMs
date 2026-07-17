@@ -9,6 +9,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - una página inicial clara para orientarse,
 - una ruta de aprendizaje por etapas,
 - un Módulo 1 guiado para abrir antes del notebook,
+- una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
 - una página de feedback para el cierre de cada clase o módulo,
 - y el notebook como laboratorio práctico.
@@ -17,9 +18,10 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 1. Seguí la Ruta en `docs/roadmap.html`.
 2. Entrá a `docs/module-1.html` para entender la base del curso.
-3. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
-4. Cerrá cada módulo con `docs/feedback.html`, escribí las 3 respuestas de reflexión y compartilas por el canal de la clase o con el mentor hasta que esté listo el formulario.
-5. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+3. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
+4. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
+5. Cerrá cada módulo con `docs/feedback.html`, escribí las 3 respuestas de reflexión y compartilas por el canal de la clase o con el mentor hasta que esté listo el formulario.
+6. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
 
 > En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
@@ -30,6 +32,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/index.html` | Landing page de la academia |
 | `docs/roadmap.html` | Ruta de aprendizaje para principiantes |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
+| `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
 | `docs/tracking-template.csv` | Plantilla inicial para Google Sheets/AppSheet sin datos reales |
 | `docs/feedback.html` | Página de feedback breve para estudiantes |
@@ -43,7 +46,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - La ruta se usa para decidir qué mirar primero.
 - El módulo 1 se usa para entender la idea base antes de tocar el notebook.
 - Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
-- Si recién empezás, seguí este orden: Ruta → Módulo 1 → Notebook → Feedback → Seguimiento.
+- Si recién empezás, seguí este orden: Ruta → Módulo 1 → Guía de clase 1 → Notebook → Feedback → Seguimiento.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
 
 ## Tracking y feedback
