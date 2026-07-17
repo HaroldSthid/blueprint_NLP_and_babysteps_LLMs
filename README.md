@@ -8,6 +8,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 
 - una página inicial clara para orientarse,
 - una ruta de aprendizaje por etapas,
+- un Track 2 / Ruta Purista para profundizar en fundamentos de NLP y preparación de datos,
 - un Módulo 1 guiado para abrir antes del notebook,
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
@@ -18,12 +19,14 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 ## Cómo usar el sitio de GitHub Pages
 
 1. Seguí la Ruta en `docs/roadmap.html`.
-2. Entrá a `docs/module-1.html` para entender la base del curso.
-3. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
-4. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
-5. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
-6. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
-7. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
+2. Elegí Track 1 o Track 2 según tu nivel e intención.
+3. Entrá a `docs/module-1.html` para entender la base del curso.
+4. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
+5. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
+6. Usá `docs/track-2.html` si querés una ruta más profunda sobre texto, datos y notebooks curados.
+7. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
+8. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+9. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
 
 > En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
@@ -33,6 +36,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 |------|-----------|
 | `docs/index.html` | Landing page de la academia |
 | `docs/roadmap.html` | Ruta de aprendizaje para principiantes |
+| `docs/track-2.html` | Índice de Track 2 / Ruta Purista |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
@@ -48,6 +52,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - El notebook se usa para practicar.
 - La ruta se usa para decidir qué mirar primero.
 - El módulo 1 se usa para entender la idea base antes de tocar el notebook.
+- Track 2 se usa para profundizar en adquisición, limpieza, calidad de datos y modernización de notebooks legacy.
 - Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
 - Si recién empezás, seguí este orden: Ruta → Módulo 1 → Guía de clase 1 → Notebook → Feedback → Seguimiento.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
