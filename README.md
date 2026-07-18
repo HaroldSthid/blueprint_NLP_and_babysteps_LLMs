@@ -25,7 +25,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 ## Cómo usar el sitio de GitHub Pages
 
 1. Seguí la Ruta en `docs/roadmap.html`.
-2. Elegí Track 1 o Track 2 según tu nivel e intención.
+2. Elegí Track 1: Módulo 1 o Track 2 según tu nivel e intención.
 3. Entrá a `docs/module-1.html` para entender la base del curso.
 4. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
 5. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
@@ -74,7 +74,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - Track 2 se usa para profundizar en adquisición, limpieza, calidad de datos y modernización de notebooks legacy.
 - Track 2 se cierra con una página integradora para conectar la secuencia completa y revisar criterios.
 - Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
-- Si recién empezás, seguí este orden: Ruta → Módulo 1 → Guía de clase 1 → Notebook → Feedback → Seguimiento.
+- Si recién empezás, seguí este orden: Ruta → Track 1: Módulo 1 → Guía de clase 1 → Notebook → Reflexión y feedback → Progreso y feedback.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
 
 ## Tracking y feedback
