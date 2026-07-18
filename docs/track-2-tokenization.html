@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tokenización y preparación lingüística</title>
+    <meta
+      name="description"
+      content="Guía de Track 2 para abrir el notebook de tokenización, stopwords, stemming, lematización y POS tagging antes del laboratorio práctico."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="track-2.html">Track 2</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="tracking.html">Seguimiento</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Track 2 / Ruta Purista</span>
+          <h1>Tokenización y preparación lingüística</h1>
+          <p class="lead">Del texto adquirido al texto preparado.</p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/notebooks/track-2/04_Tokenization_Stemming_lemmatization_stopword_postagging.ipynb">Abrir notebook en GitHub</a>
+            <a class="button secondary" href="https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/notebooks/track-2/04_Tokenization_Stemming_lemmatization_stopword_postagging.ipynb">Abrir en Colab</a>
+          </div>
+          <p class="meta">
+            Inspirado en <em>Practical Natural Language Processing</em> (O’Reilly), en <a href="https://www.practicalnlp.ai/">practicalnlp.ai</a>
+            y en <a href="https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch2/">practical-nlp-code/Ch2</a>.
+            No existe afiliación oficial con esos recursos salvo que se indique explícitamente.
+          </p>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="what-you-learn">
+          <article class="card wide">
+            <h2 id="what-you-learn" class="section-title">Qué vas a aprender</h2>
+            <ul class="list">
+              <li>Cómo pasar de texto bruto a tokens útiles para análisis.</li>
+              <li>Cuándo conviene quitar stopwords y cuándo no conviene apurarse.</li>
+              <li>Qué cambia entre stemming y lematización.</li>
+              <li>Cómo POS tagging agrega contexto sintáctico al texto.</li>
+            </ul>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Por qué importa después de scraping y OCR</h2>
+            <p class="meta">
+              Primero conseguís texto: desde una página web o desde una imagen. Después empieza el trabajo fino.
+              Tokenización, stopwords, stemming, lematización y POS tagging convierten ese texto en una base más
+              estable para medir, comparar, etiquetar y preparar datasets de NLP con menos ruido.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="setup">
+          <article class="card full soft">
+            <h2 id="setup" class="section-title">Setup del entorno</h2>
+            <ul class="list">
+              <li>El notebook usa recursos de NLTK: `punkt`, `punkt_tab`, `stopwords`, `wordnet`, `omw-1.4`, `averaged_perceptron_tagger` y `averaged_perceptron_tagger_eng`.</li>
+              <li>También descarga el modelo de spaCy `en_core_web_sm`.</li>
+              <li>Si una importación o recurso falla, volvé a correr la celda de setup y reiniciá el runtime si hace falta.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="before-open">
+          <article class="card full">
+            <h2 id="before-open" class="section-title">Antes de abrir el notebook</h2>
+            <ul class="list">
+              <li>Leé la historia completa: el orden importa.</li>
+              <li>Entendé primero qué problema resuelve cada técnica; no son pasos decorativos.</li>
+              <li>Recordá que Track 2 profundiza más que Track 1, pero no lo reemplaza.</li>
+              <li>Si el entorno cambia, repetí setup antes de seguir con el flujo principal.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="class-notes-tokenization">
+          <article class="card full soft">
+            <h2 id="class-notes-tokenization" class="section-title">Notas de clase</h2>
+            <div class="note-stack">
+              <details class="class-note">
+                <summary><span class="note-kicker">Tokenización</span>Separar bien ya es pensar bien</summary>
+                <div class="note-body">
+                  <p>Si los tokens salen mal, todo lo demás se apoya sobre una base débil. La limpieza empieza en la segmentación.</p>
+                </div>
+              </details>
+              <details class="class-note mentor-note">
+                <summary><span class="note-kicker">Normalización</span>No toda variación vale lo mismo</summary>
+                <div class="note-body">
+                  <p>Stemming y lematización reducen variantes, pero no siempre conviene tratarlas igual. El criterio depende del objetivo.</p>
+                </div>
+              </details>
+              <details class="class-note skip-note">
+                <summary><span class="note-kicker">POS tagging</span>El contexto cambia el significado</summary>
+                <div class="note-body">
+                  <p>Ver la función gramatical ayuda a leer mejor el texto y a tomar decisiones más finas sobre análisis y features.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="next-actions">
+          <article class="card wide">
+            <h2 id="next-actions" class="section-title">Siguientes pasos</h2>
+            <div class="actions">
+              <a class="button primary" href="track-2.html">Volver a Track 2</a>
+              <a class="button secondary" href="feedback.html">Feedback</a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="track-2.html">Volver a Track 2</a></span>
+        <span><a href="feedback.html">Feedback</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
