@@ -14,6 +14,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - una guía de tokenización y preparación lingüística para el notebook de limpieza y análisis,
 - una guía de data augmentation con NLPaug ModernLab para el notebook de variaciones de texto,
 - una guía de weak supervision con Snorkel Modern Colab para el notebook de reglas débiles,
+- una página de cierre integrador para conectar la secuencia completa de Track 2,
 - un Módulo 1 guiado para abrir antes del notebook,
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
@@ -30,13 +31,14 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 5. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
 6. Usá `docs/track-2.html` si querés una ruta más profunda sobre texto, datos y notebooks curados.
 7. Entrá a `docs/track-2-webscraping.html` para abrir el primer notebook de Track 2 con su guía y sus enlaces directos.
-8. Entrá a `docs/track-2-tokenization.html` para abrir el notebook de tokenización, stopwords, stemming, lematización y POS tagging con su guía asociada.
-9. Entrá a `docs/track-2-ocr.html` para abrir el notebook de OCR con Tesseract y su guía asociada.
+8. Entrá a `docs/track-2-ocr.html` para abrir el notebook de OCR con Tesseract y su guía asociada.
+9. Entrá a `docs/track-2-tokenization.html` para abrir el notebook de tokenización, stopwords, stemming, lematización y POS tagging con su guía asociada.
 10. Entrá a `docs/track-2-data-augmentation.html` para abrir el notebook de data augmentation ModernLab con su guía asociada.
 11. Entrá a `docs/track-2-snorkel.html` para abrir el notebook de weak supervision con Snorkel Modern Colab y su guía asociada.
-12. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
-13. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
-14. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
+12. Cerrá la secuencia de Track 2 con `docs/track-2-wrap-up.html` para integrar la ruta completa, revisar supuestos y hacer el checklist final.
+13. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
+14. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+15. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
 
 > En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
@@ -52,6 +54,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/track-2-ocr.html` | Guía del notebook de OCR con Tesseract y enlaces a GitHub y Colab |
 | `docs/track-2-data-augmentation.html` | Guía del notebook de data augmentation con NLPaug ModernLab y enlaces a GitHub y Colab |
 | `docs/track-2-snorkel.html` | Guía del notebook de weak supervision con Snorkel Modern Colab y enlaces a GitHub y Colab |
+| `docs/track-2-wrap-up.html` | Página de cierre integrador con checklist y reflexión para Track 2 |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
@@ -69,6 +72,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - La ruta se usa para decidir qué mirar primero.
 - El módulo 1 se usa para entender la idea base antes de tocar el notebook.
 - Track 2 se usa para profundizar en adquisición, limpieza, calidad de datos y modernización de notebooks legacy.
+- Track 2 se cierra con una página integradora para conectar la secuencia completa y revisar criterios.
 - Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
 - Si recién empezás, seguí este orden: Ruta → Módulo 1 → Guía de clase 1 → Notebook → Feedback → Seguimiento.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.

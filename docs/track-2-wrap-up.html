@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cierre de Track 2: de texto crudo a señales de entrenamiento</title>
+    <meta
+      name="description"
+      content="Página de cierre de Track 2 para integrar scraping, OCR, tokenización, augmentation y weak supervision en una sola ruta de preparación de datos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="track-2.html">Track 2</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="tracking.html">Seguimiento</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Track 2 / Ruta Purista</span>
+          <h1>Cierre de Track 2: de texto crudo a señales de entrenamiento</h1>
+          <p class="lead">
+            Track 2 no es una colección de notebooks sueltos: es una ruta completa de
+            preparación de datos. Primero conseguís texto, después lo entendés, lo ordenás,
+            lo hacés más robusto y recién ahí empezás a crear señales útiles.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="track-2.html">Volver a Track 2</a>
+            <a class="button secondary" href="roadmap.html">Ver la ruta</a>
+          </div>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="pipeline">
+          <article class="card full soft">
+            <h2 id="pipeline" class="section-title">La secuencia completa</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Etapa</th>
+                  <th>Qué hacés</th>
+                  <th>Guía</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Adquirir texto</td>
+                  <td>Recolectás contenido desde la web con criterio y límites claros.</td>
+                  <td><a href="track-2-webscraping.html">Web scraping</a></td>
+                </tr>
+                <tr>
+                  <td>Extraer texto</td>
+                  <td>Pasás de imagen a texto cuando la fuente no viene limpia.</td>
+                  <td><a href="track-2-ocr.html">OCR</a></td>
+                </tr>
+                <tr>
+                  <td>Limpiar y entender texto</td>
+                  <td>Tokenizás, normalizás y mirás qué partes del lenguaje importan.</td>
+                  <td><a href="track-2-tokenization.html">Tokenización y preprocessing</a></td>
+                </tr>
+                <tr>
+                  <td>Preparar robustez</td>
+                  <td>Probás variaciones controladas para no depender de una sola forma de escribir.</td>
+                  <td><a href="track-2-data-augmentation.html">Data augmentation</a></td>
+                </tr>
+                <tr>
+                  <td>Crear señales</td>
+                  <td>Usás reglas débiles para arrancar, sabiendo que no equivalen a verdad.</td>
+                  <td><a href="track-2-snorkel.html">Snorkel / weak supervision</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="checklist">
+          <article class="card wide">
+            <h2 id="checklist" class="section-title">Checklist final</h2>
+            <ul class="list">
+              <li>Entendés de dónde sale el texto y qué límites tiene la fuente.</li>
+              <li>Podés explicar cuándo necesitás OCR y cuándo alcanza con scraping.</li>
+              <li>Sabés qué limpia el preprocessing y qué no arregla.</li>
+              <li>Podés justificar por qué augmentás un dataset y qué riesgo agregás.</li>
+              <li>Podés diseñar reglas débiles sin confundir señal con verdad.</li>
+              <li>Sabés ubicar dónde entra ruido, sesgo o pérdida de contexto.</li>
+            </ul>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Mini-proyecto sugerido</h2>
+            <ul class="list">
+              <li>Elegí una fuente chica de texto: reseñas, noticias, posts o FAQs.</li>
+              <li>Armá un dataset mínimo y documentá supuestos, exclusiones y riesgos.</li>
+              <li>Definí 2–3 labeling functions simples para una tarea concreta.</li>
+              <li>Marcá dónde puede entrar ruido, sesgo o desalineación con el objetivo.</li>
+              <li>Escribí qué parte del pipeline confiarías menos y por qué.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="reflection">
+          <article class="card full">
+            <h2 id="reflection" class="section-title">Preguntas para reflexionar</h2>
+            <div class="note-stack">
+              <details class="class-note">
+                <summary><span class="note-kicker">Producto</span>¿Qué problema real resuelve tu dataset?</summary>
+                <div class="note-body">
+                  <p>Si no podés nombrar el uso, es fácil sobrediseñar el pipeline.</p>
+                </div>
+              </details>
+              <details class="class-note mentor-note">
+                <summary><span class="note-kicker">Negocio</span>¿Qué costo tiene equivocarte con la etiqueta o la fuente?</summary>
+                <div class="note-body">
+                  <p>La decisión técnica siempre tiene impacto en tiempo, calidad y riesgo.</p>
+                </div>
+              </details>
+              <details class="class-note skip-note">
+                <summary><span class="note-kicker">Técnico</span>¿Qué parte del pipeline aporta señal y cuál solo agrega ruido?</summary>
+                <div class="note-body">
+                  <p>Separar ambas cosas ayuda a entender dónde está el valor real.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="dont-do">
+          <article class="card full soft">
+            <h2 id="dont-do" class="section-title">Qué no hacer</h2>
+            <ul class="list">
+              <li>No automatices antes de entender las etiquetas.</li>
+              <li>No aumentes datos a ciegas.</li>
+              <li>No trates weak labels como verdad.</li>
+              <li>No confundas éxito en Colab con listo para producción.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="links">
+          <article class="card wide">
+            <h2 id="links" class="section-title">Volver a las guías</h2>
+            <ul class="list">
+              <li><a href="track-2-webscraping.html">Guía de web scraping</a></li>
+              <li><a href="track-2-ocr.html">Guía de OCR</a></li>
+              <li><a href="track-2-tokenization.html">Guía de tokenización y preprocessing</a></li>
+              <li><a href="track-2-data-augmentation.html">Guía de data augmentation ModernLab</a></li>
+              <li><a href="track-2-snorkel.html">Guía de Snorkel Modern Colab</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="roadmap.html">Ruta completa</a></li>
+            </ul>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Criterio de cierre</h2>
+            <p class="meta">
+              Track 2 es una ruta más profunda y técnica que Track 1, pero no la reemplaza.
+              Su valor está en ayudarte a pensar mejor cómo se construyen los datos antes de
+              entrenar cualquier cosa.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="inspiration">
+          <article class="card full">
+            <h2 id="inspiration" class="section-title">Cita e inspiración</h2>
+            <p class="meta">
+              Esta academia usa materiales curados y adaptados, inspirados en <em>Practical
+              Natural Language Processing</em> (O’Reilly), en <a href="https://www.practicalnlp.ai/">practicalnlp.ai</a>
+              y en el código de capítulo 2 publicado en <a href="https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch2/">practical-nlp-code/Ch2</a>.
+            </p>
+            <p class="meta">
+              No existe afiliación oficial con esos recursos salvo que se indique explícitamente.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="track-2.html">Volver a Track 2</a></span>
+        <span><a href="feedback.html">Feedback</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
