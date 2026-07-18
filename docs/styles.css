@@ -1,15 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700;800&display=swap");
+
 :root {
   color-scheme: light;
-  --bg: #f7f8fc;
-  --surface: #ffffff;
-  --surface-alt: #eef3ff;
-  --text: #172033;
-  --muted: #5c6b82;
-  --brand: #3558d4;
-  --brand-soft: #dde6ff;
-  --border: #d9e1f2;
-  --shadow: 0 18px 40px rgba(23, 32, 51, 0.08);
-  --radius: 20px;
+  --bg: #f4f2eb;
+  --surface: #fbfaf6;
+  --surface-alt: #efebe2;
+  --text: #171717;
+  --muted: #5f5a52;
+  --brand: #171717;
+  --brand-soft: #e4e0d7;
+  --border: #d6d0c4;
+  --shadow: 0 10px 24px rgba(17, 17, 17, 0.06);
+  --radius: 8px;
   --max: 1080px;
 }
 
@@ -23,19 +25,29 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #f8faff 0%, #f3f6fb 100%);
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background: linear-gradient(180deg, #f5f3ed 0%, #eeebe3 100%);
   color: var(--text);
   line-height: 1.6;
 }
 
 a {
   color: var(--brand);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
 }
 
 .shell {
@@ -59,6 +71,7 @@ a:hover {
 .brand {
   font-weight: 800;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .nav {
@@ -67,10 +80,15 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.nav a,
+.footer a,
+.button {
+  text-decoration: none;
+}
+
 .hero,
 .panel {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(10px);
+  background: var(--surface);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   border-radius: var(--radius);
@@ -86,7 +104,7 @@ a:hover {
   gap: 8px;
   background: var(--brand-soft);
   color: var(--brand);
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 6px 12px;
   font-size: 0.9rem;
   font-weight: 700;
@@ -123,7 +141,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 12px 18px;
   font-weight: 700;
   border: 1px solid transparent;
@@ -131,13 +149,18 @@ h1 {
 
 .button.primary {
   background: var(--brand);
-  color: #fff;
+  color: var(--surface);
 }
 
 .button.secondary {
-  background: #fff;
+  background: transparent;
   border-color: var(--border);
   color: var(--text);
+}
+
+.button:hover,
+.button:focus-visible {
+  text-decoration: none;
 }
 
 .grid {
@@ -155,7 +178,7 @@ h1 {
   padding: 22px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 18px;
+  border-radius: var(--radius);
 }
 
 .card.wide {
@@ -190,9 +213,9 @@ h1 {
 .form-frame-wrap {
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 18px;
-  background: #fff;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
 }
 
 .form-frame {
@@ -225,10 +248,10 @@ h1 {
 details.class-note {
   --note-accent: var(--brand);
   overflow: hidden;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-left: 6px solid var(--note-accent);
-  border-radius: 18px;
+  border-radius: var(--radius);
 }
 
 details.class-note > summary {
@@ -272,13 +295,13 @@ details.class-note > .note-body ul {
 }
 
 .skip-note {
-  --note-accent: #7b61ff;
-  background: #faf8ff;
+  --note-accent: #44403a;
+  background: #f5f2eb;
 }
 
 .mentor-note {
-  --note-accent: #1b8f6a;
-  background: #f4fbf7;
+  --note-accent: #171717;
+  background: #efebe2;
 }
 
 .class-note .note-kicker {
@@ -307,8 +330,8 @@ details.class-note > .note-body ul {
 
 .pill {
   padding: 7px 12px;
-  border-radius: 999px;
-  background: #fff;
+  border-radius: 6px;
+  background: var(--surface);
   border: 1px solid var(--border);
   color: var(--muted);
   font-size: 0.92rem;
@@ -325,15 +348,15 @@ details.class-note > .note-body ul {
   gap: 14px;
   align-items: start;
   padding: 18px;
-  border-radius: 18px;
-  background: #fff;
+  border-radius: var(--radius);
+  background: var(--surface);
   border: 1px solid var(--border);
 }
 
 .step-number {
   width: 56px;
   height: 56px;
-  border-radius: 16px;
+  border-radius: 8px;
   background: var(--brand-soft);
   color: var(--brand);
   display: grid;
@@ -346,7 +369,7 @@ details.class-note > .note-body ul {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--radius);
 }
 
 .table th,
@@ -358,7 +381,7 @@ details.class-note > .note-body ul {
 }
 
 .table th {
-  background: #f0f4ff;
+  background: #ece8df;
 }
 
 .footer {
