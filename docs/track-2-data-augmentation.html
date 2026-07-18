@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Augmentation con NLPaug ModernLab</title>
+    <meta
+      name="description"
+      content="Guía de Track 2 para abrir el notebook ModernLab de data augmentation con NLPaug, con contexto, setup y enlaces directos."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="track-2.html">Track 2</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="tracking.html">Seguimiento</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Track 2 / Ruta Purista</span>
+          <h1>Data Augmentation con NLPaug ModernLab</h1>
+          <p class="lead">Entrenar con variaciones: preparar un modelo para texto imperfecto del mundo real.</p>
+          <div class="actions">
+            <a
+              class="button primary"
+              href="https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/notebooks/track-2/05_Data_Augmentation_Using_NLPaug_ModernLab.ipynb"
+            >
+              Abrir notebook en GitHub
+            </a>
+            <a
+              class="button secondary"
+              href="https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/notebooks/track-2/05_Data_Augmentation_Using_NLPaug_ModernLab.ipynb"
+            >
+              Abrir en Colab
+            </a>
+          </div>
+          <p class="meta">
+            Inspirado en <em>Practical Natural Language Processing</em> (O’Reilly), en
+            <a href="https://www.practicalnlp.ai/">practicalnlp.ai</a> y en
+            <a href="https://github.com/practical-nlp/practical-nlp-code/blob/master/Ch2/">practical-nlp-code/Ch2</a>.
+            No existe afiliación oficial con esos recursos salvo que se indique explícitamente.
+          </p>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="learn">
+          <article class="card wide">
+            <h2 id="learn" class="section-title">Qué vas a aprender</h2>
+            <ul class="list">
+              <li>Cómo generar variaciones de texto sin perder de vista el objetivo del dataset.</li>
+              <li>Cómo usar NLPaug para ruido de caracteres, sustituciones de palabras y ejemplos contextuales.</li>
+              <li>Cómo pensar la augmentación como una herramienta de robustez, no como un adorno.</li>
+              <li>Cómo leer el costo técnico de cada transformación antes de aplicarla en producción.</li>
+            </ul>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Por qué importa después de tokenización y limpieza</h2>
+            <p class="meta">
+              La augmentación funciona mejor cuando el texto ya pasó por tokenización y preprocesamiento básico.
+              Primero ordenás la materia prima; después introducís variación con intención. Así evitás amplificar ruido,
+              reducís errores obvios y entrenás al modelo para tolerar escritura real, abreviaturas, typos y cambios leves.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="when-it-helps">
+          <article class="card full">
+            <h2 id="when-it-helps" class="section-title">Cuándo ayuda y cuándo puede dañar</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Ayuda cuando...</th>
+                  <th>Puede dañar cuando...</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>tenés pocos ejemplos y querés robustez frente a variaciones de escritura;</td>
+                  <td>el dataset ya está bastante sucio y la augmentación solo multiplica el ruido;</td>
+                </tr>
+                <tr>
+                  <td>querés exponer al modelo a typos, sinónimos o pequeñas perturbaciones;</td>
+                  <td>la etiqueta depende de una palabra exacta y la transformación rompe el significado;</td>
+                </tr>
+                <tr>
+                  <td>buscás mejorar generalización en un dominio estable;</td>
+                  <td>la tarea es sensible al contexto, a nombres propios o a matices semánticos finos.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="setup">
+          <article class="card full soft">
+            <h2 id="setup" class="section-title">Setup del entorno</h2>
+            <ul class="list">
+              <li>Dependencias clave: `nlpaug`, `nltk`, `pandas`, `matplotlib` y `transformers`.</li>
+              <li>La parte contextual puede descargar `distilbert-base-uncased`; la primera corrida puede ser más lenta.</li>
+              <li>La limpieza opcional del runtime solo tiene sentido si estás resolviendo conflictos desechables de Colab.</li>
+              <li>Si cambian las dependencias, repetí la celda de setup antes de seguir con el laboratorio.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="before-open">
+          <article class="card full">
+            <h2 id="before-open" class="section-title">Antes de abrir el notebook</h2>
+            <ul class="list">
+              <li>Leé la secuencia completa: el orden importa para no mezclar limpieza con augmentación.</li>
+              <li>Recordá que Track 2 es más profundo y técnico, pero no “mejor” que Track 1.</li>
+              <li>Usá ModernLab como camino preferido; el notebook legacy queda como referencia histórica y comparación.</li>
+              <li>Si querés repetir el flujo, hacelo con intención: no toda transformación vale para todos los casos.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="class-notes-augmentation">
+          <article class="card full soft">
+            <h2 id="class-notes-augmentation" class="section-title">Notas de clase</h2>
+            <div class="note-stack">
+              <details class="class-note">
+                <summary><span class="note-kicker">Robustez</span>Variar no es inventar sin criterio</summary>
+                <div class="note-body">
+                  <p>La augmentación sirve para enseñar tolerancia a la forma, no para esconder un dataset mal preparado.</p>
+                </div>
+              </details>
+              <details class="class-note mentor-note">
+                <summary><span class="note-kicker">Semántica</span>La etiqueta manda</summary>
+                <div class="note-body">
+                  <p>Si una transformación cambia el significado, ya no estás ampliando datos: estás cambiando la tarea.</p>
+                </div>
+              </details>
+              <details class="class-note skip-note">
+                <summary><span class="note-kicker">Contexto</span>Más contexto, más cuidado</summary>
+                <div class="note-body">
+                  <p>Los modelos contextuales pueden ayudar, pero también agregan latencia y costo de descarga en la primera ejecución.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="next-actions">
+          <article class="card wide">
+            <h2 id="next-actions" class="section-title">Siguientes pasos</h2>
+            <div class="actions">
+              <a class="button primary" href="track-2.html">Volver a Track 2</a>
+              <a class="button secondary" href="feedback.html">Feedback</a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="track-2.html">Volver a Track 2</a></span>
+        <span><a href="feedback.html">Feedback</a></span>
+      </footer>
+    </div>
+  </body>
+</html>

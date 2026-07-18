@@ -12,6 +12,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - notebooks curados en `notebooks/track-2/` con guías de entrada,
 - una guía específica de OCR con Tesseract para el notebook de extracción desde imágenes,
 - una guía de tokenización y preparación lingüística para el notebook de limpieza y análisis,
+- una guía de data augmentation con NLPaug ModernLab para el notebook de variaciones de texto,
 - un Módulo 1 guiado para abrir antes del notebook,
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
@@ -30,9 +31,10 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 7. Entrá a `docs/track-2-webscraping.html` para abrir el primer notebook de Track 2 con su guía y sus enlaces directos.
 8. Entrá a `docs/track-2-tokenization.html` para abrir el notebook de tokenización, stopwords, stemming, lematización y POS tagging con su guía asociada.
 9. Entrá a `docs/track-2-ocr.html` para abrir el notebook de OCR con Tesseract y su guía asociada.
-10. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
-11. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
-12. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
+10. Entrá a `docs/track-2-data-augmentation.html` para abrir el notebook de data augmentation ModernLab con su guía asociada.
+11. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
+12. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+13. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
 
 > En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
@@ -46,6 +48,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/track-2-webscraping.html` | Guía del primer notebook de Track 2 con enlaces a GitHub y Colab |
 | `docs/track-2-tokenization.html` | Guía del notebook de tokenización, stopwords, stemming, lematización y POS tagging con enlaces a GitHub y Colab |
 | `docs/track-2-ocr.html` | Guía del notebook de OCR con Tesseract y enlaces a GitHub y Colab |
+| `docs/track-2-data-augmentation.html` | Guía del notebook de data augmentation con NLPaug ModernLab y enlaces a GitHub y Colab |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
