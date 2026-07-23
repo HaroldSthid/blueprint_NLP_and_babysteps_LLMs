@@ -15,6 +15,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - una guía de data augmentation con NLPaug ModernLab para el notebook de variaciones de texto,
 - una guía de weak supervision con Snorkel Modern Colab para el notebook de reglas débiles,
 - una página de cierre integrador para conectar la secuencia completa de Track 2,
+- un Track 3 orientado a RAG básico y recuperación por similitud,
 - un Módulo 1 guiado para abrir antes del notebook,
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
@@ -25,7 +26,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 ## Cómo usar el sitio de GitHub Pages
 
 1. Seguí la Ruta en `docs/roadmap.html`.
-2. Elegí Track 1: Módulo 1 o Track 2 según tu nivel e intención.
+2. Elegí Track 1: Módulo 1, Track 2 o Track 3 según tu nivel e intención.
 3. Entrá a `docs/module-1.html` para entender la base del curso.
 4. Usá `docs/class-session-1.html` como guía de clase en vivo para seguir el flujo completo.
 5. Abrí el notebook en [Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para ejecutarlo, o en [GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) para leerlo.
@@ -36,9 +37,10 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 10. Entrá a `docs/track-2-data-augmentation.html` para abrir el notebook de data augmentation ModernLab con su guía asociada.
 11. Entrá a `docs/track-2-snorkel.html` para abrir el notebook de weak supervision con Snorkel Modern Colab y su guía asociada.
 12. Cerrá la secuencia de Track 2 con `docs/track-2-wrap-up.html` para integrar la ruta completa, revisar supuestos y hacer el checklist final.
-13. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
-14. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
-15. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
+13. Abrí `docs/track-3.html` si querés entender RAG básico: chunks, embeddings, FAISS/Chroma y búsqueda por similitud.
+14. Cerrá cada módulo con `docs/feedback.html`, completá el formulario embebido y usá el enlace de apertura en pestaña nueva si necesitás verlo aparte.
+15. Usá la sección de seguimiento para ver cómo avanza tu progreso junto con el feedback.
+16. Si vas a activar el flujo de mentoría, seguí `docs/appsheet-setup.html` antes de publicar la app.
 
 > En Colab, a veces tenés que aceptar permisos o reiniciar el entorno después de instalar dependencias. Es normal.
 
@@ -55,6 +57,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/track-2-data-augmentation.html` | Guía del notebook de data augmentation con NLPaug ModernLab y enlaces a GitHub y Colab |
 | `docs/track-2-snorkel.html` | Guía del notebook de weak supervision con Snorkel Modern Colab y enlaces a GitHub y Colab |
 | `docs/track-2-wrap-up.html` | Página de cierre integrador con checklist y reflexión para Track 2 |
+| `docs/track-3.html` | Página de Track 3 para RAG básico con enlaces al repo y al notebook de Colab |
 | `docs/module-1.html` | Guía del primer módulo antes del notebook |
 | `docs/class-session-1.html` | Guía de clase en vivo para la primera sesión |
 | `docs/tracking.html` | Flujo conceptual de progreso y evaluación |
@@ -73,9 +76,12 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - El módulo 1 se usa para entender la idea base antes de tocar el notebook.
 - Track 2 se usa para profundizar en adquisición, limpieza, calidad de datos y modernización de notebooks legacy.
 - Track 2 se cierra con una página integradora para conectar la secuencia completa y revisar criterios.
+- Track 3 se usa para entender el pipeline de recuperación: chunks, embeddings, vector store y similarity search.
+- Track 3 no reemplaza un sistema completo de generación; sirve como base para aprender RAG básico.
 - Si vas a ejecutar el notebook, usá Colab; si solo querés revisarlo, usá GitHub.
 - Si recién empezás, seguí este orden: Ruta → Track 1: Módulo 1 → Guía de clase 1 → Notebook → Reflexión y feedback → Progreso y feedback.
 - Si ya tenés base, usá el notebook como referencia y la web como mapa de navegación.
+- Si querés seguir después de Track 2, abrí Track 3 para el tramo de recuperación antes de pensar en generación más completa.
 
 ## Tracking y feedback
 

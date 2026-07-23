@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Track 3 | RAG básico</title>
+    <meta
+      name="description"
+      content="Track 3: laboratorio de RAG básico para entender chunks, embeddings, índices vectoriales y recuperación por similitud."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand">NLP & Baby Steps LLMs</div>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="roadmap.html">Ruta</a>
+          <a href="module-1.html">Track 1</a>
+          <a href="track-2.html">Track 2</a>
+          <a href="track-3.html">Track 3</a>
+          <a href="https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb">Abrir en Colab</a>
+          <a href="feedback.html">Reflexión y feedback</a>
+          <a href="tracking.html">Progreso y feedback</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <span class="eyebrow">Track 3 / RAG básico</span>
+          <h1>Aprendé a recuperar contexto útil antes de responder.</h1>
+          <p class="lead">
+            Este track no busca armar un RAG completo con generación final. Primero te enseña el
+            pipeline de recuperación: partir texto en chunks, convertirlo en embeddings, indexarlo
+            y buscar por similitud lo más relevante.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/HaroldSthid/RAG_blueprint_babysteps/tree/main">Ver repo del lab</a>
+            <a class="button secondary" href="https://colab.research.google.com/github/HaroldSthid/RAG_blueprint_babysteps/blob/main/RAG_Blueprint_v2.ipynb">Abrir notebook en Colab</a>
+            <a class="button secondary" href="index.html">Volver al inicio</a>
+          </div>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="what-is-rag">
+          <article class="card wide">
+            <h2 id="what-is-rag" class="section-title">Qué vas a aprender</h2>
+            <p class="meta">
+              Pensalo así: los <strong>chunks</strong> son notas cortitas con pedazos del texto,
+              los <strong>embeddings</strong> son huellas numéricas de esas notas, y un índice como
+              <strong>FAISS</strong> o <strong>Chroma</strong> funciona como una biblioteca rápida que
+              te deja buscar por cercanía en lugar de leer todo a mano.
+            </p>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Pipeline de recuperación</h2>
+            <ul class="list">
+              <li>Partís un documento en chunks manejables.</li>
+              <li>Convertís cada chunk en un embedding numérico.</li>
+              <li>Guardás esos vectores en un índice rápido.</li>
+              <li>Hacés una consulta y recuperás los fragmentos más parecidos.</li>
+            </ul>
+          </article>
+
+          <article class="card wide">
+            <h2 class="section-title">Qué sí y qué no</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Qué sí</th>
+                  <th>Qué no</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Recuperación de contexto relevante desde texto propio o curado.</td>
+                  <td>No reemplaza un sistema completo de generación final.</td>
+                </tr>
+                <tr>
+                  <td>Entender cómo se arma una base para RAG.</td>
+                  <td>No promete respuestas mágicas sin buen contenido de origen.</td>
+                </tr>
+                <tr>
+                  <td>Ver cómo la similitud ayuda a traer contexto útil.</td>
+                  <td>No copia el notebook al Pages repo: enlaza al lab original.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card wide soft">
+            <h2 class="section-title">Para quién es</h2>
+            <p class="meta">
+              Track 3 es ideal si ya querés pasar de “leer sobre LLMs” a “entender cómo se busca
+              contexto antes de responder”. Es una base clara para después pensar en sistemas más
+              completos.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="future-idea">
+          <article class="card full">
+            <h2 id="future-idea" class="section-title">Idea futura</h2>
+            <p class="meta">
+              Como subcapítulo siguiente, vale la pena sumar un flujo <strong>web source → vector store</strong>:
+              tomar una fuente web, convertirla en chunks, guardarla en el índice y luego recuperarla
+              de forma reproducible.
+            </p>
+          </article>
+        </section>
+
+        <section class="section grid cards" aria-labelledby="track-links">
+          <article class="card wide">
+            <h2 id="track-links" class="section-title">Links del laboratorio</h2>
+            <div class="actions">
+              <a class="button primary" href="https://github.com/HaroldSthid/RAG_blueprint_babysteps/tree/main">Repositorio público</a>
+              <a class="button secondary" href="https://colab.research.google.com/github/HaroldSthid/RAG_blueprint_babysteps/blob/main/RAG_Blueprint_v2.ipynb">Colab</a>
+              <a class="button secondary" href="https://github.com/HaroldSthid/RAG_blueprint_babysteps/blob/main/README.md">Ver README del proyecto</a>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span><a href="roadmap.html">Volver a la ruta</a></span>
+        <span><a href="index.html">Ir al inicio</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
