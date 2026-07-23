@@ -19,6 +19,7 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 - un Módulo 1 guiado para abrir antes del notebook,
 - una guía de clase 1 para usar el sitio como recorrido completo en vivo,
 - un flujo simple para medir avance y feedback,
+- un mapa lateral para ubicarse entre Inicio, Ruta, Tracks, feedback y seguimiento,
 - una guía para mentores con la configuración de Google Form + Google Sheets + AppSheet,
 - una página de feedback para el cierre de cada clase o módulo con el Form público embebido,
 - y el notebook como laboratorio práctico.
@@ -65,6 +66,8 @@ Este repositorio ya no es solo un notebook de análisis de sentimiento. La idea 
 | `docs/feedback.html` | Página de feedback breve para estudiantes con el Form público embebido |
 | `docs/appsheet-setup.html` | Guía para mentores sobre Form + Sheets + AppSheet |
 | `docs/styles.css` | Estilos compartidos del sitio |
+| `docs/site-map.css` | Estilos del mapa lateral de aprendizaje |
+| `docs/site-map.js` | Comportamiento del mapa lateral de aprendizaje |
 | `docs/_config.yml` | Metadata liviana para GitHub Pages |
 | `notebooks/track-2/` | Carpeta de notebooks curados para Track 2 |
 | `NLP_LLMs_babysteps.ipynb` | Notebook práctico principal — [Abrir en Colab](https://colab.research.google.com/github/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) / [Ver en GitHub](https://github.com/HaroldSthid/blueprint_NLP_and_babysteps_LLMs/blob/main/NLP_LLMs_babysteps.ipynb) |
